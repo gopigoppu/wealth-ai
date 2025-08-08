@@ -44,6 +44,18 @@
 - **build_visualization:**  
   Builds charts, graphs, and tables to visually clarify results whenever numbers, rankings, or comparisons are involved.
 
+## Demo Video
+
+[![WealthGPT Demo](https://img.youtube.com/vi/-GGfpvDJtUg/0.jpg)](https://www.youtube.com/watch?v=-GGfpvDJtUg)
+
+Watch a demo of WealthGPT in action:  
+https://www.youtube.com/watch?v=-GGfpvDJtUg
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-GGfpvDJtUg" title="WealthGPT Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## System Workflow
 
 1. **True Intent Identification:**  
@@ -114,7 +126,7 @@ _"What is the risk exposure in my client’s tech sector holdings and how should
 
 ***
 
-# WealthGPT Agent-Based System ArchitectureBased on the provided architectural overview and data analysis, I've created a comprehensive, well-defined architecture for the WealthGPT system that incorporates Google Cloud products, specialized agents, and tools. Here's the detailed architecture:## Architecture OverviewThe WealthGPT system is designed as a **cloud-native, multi-agent wealth management platform** built on Google Cloud Platform. The architecture follows a layered approach with seven distinct tiers, each optimized for specific functionality while maintaining enterprise-grade security and scalability.
+
 
 # WealthGPT Agent-Based System Architecture
 
