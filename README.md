@@ -114,8 +114,136 @@ _"What is the risk exposure in my client’s tech sector holdings and how should
 
 ***
 
+# WealthGPT Agent-Based System ArchitectureBased on the provided architectural overview and data analysis, I've created a comprehensive, well-defined architecture for the WealthGPT system that incorporates Google Cloud products, specialized agents, and tools. Here's the detailed architecture:## Architecture OverviewThe WealthGPT system is designed as a **cloud-native, multi-agent wealth management platform** built on Google Cloud Platform. The architecture follows a layered approach with seven distinct tiers, each optimized for specific functionality while maintaining enterprise-grade security and scalability.
+
+## Core Architecture Components### 1. Client Interface Layer
+- **Web Applications**: React/Angular-based interfaces
+- **Mobile Applications**: React Native/Flutter apps  
+- **API Clients**: Third-party system integrations
+- **Authentication**: OAuth 2.0 and Google Cloud Identity integration
+
+### 2. API Gateway Layer (`main.py`)
+**Google Cloud Services Used:**
+- **Cloud Endpoints**: API management and monitoring
+- **Cloud Armor**: DDoS protection and WAF
+- **Cloud Load Balancing**: Global traffic distribution
+- **Cloud Identity**: Centralized authentication
+
+**Features:**
+- FastAPI-based request routing
+- Rate limiting and throttling
+- Request validation and documentation
+
+### 3. Agent Orchestration Layer (`agent.py`)
+**Google Cloud Services Used:**
+- **Vertex AI**: Natural language understanding and intent detection
+- **Cloud Functions**: Serverless orchestration logic
+- **Pub/Sub**: Event-driven agent communication
+
+**Capabilities:**
+- Intelligent agent selection and routing
+- Multi-agent coordination
+- Context management across conversations
+- Response aggregation and formatting
+
+### 4. Specialized Subagents#### Portfolio Agent (`client_portfolio.py`)
+- Asset allocation analysis and risk assessment
+- Portfolio performance tracking
+- Compliance verification
+- Investment optimization recommendations
+
+#### Market Intelligence Agent (`market_intel.py`) 
+- Real-time market data processing via LSEG/Refinitiv
+- Economic indicator analysis
+- News sentiment analysis and trend detection
+
+#### Content Intelligence Agent (`content_intel.py`)
+- Research document retrieval and synthesis
+- Thought leadership content analysis
+- Regulatory update processing
+
+#### Recommendations Agent (`recommendations.py`)
+- Personalized investment suggestions
+- Next best action identification
+- Goal-based financial planning
+- Risk-adjusted portfolio recommendations
+
+#### Visualization Agent (`visualization.py`)
+- Interactive chart generation
+- Dashboard creation and custom reporting
+- Mobile-responsive visualizations
+
+### 5. Tools Layer#### BigQuery Tool (`bigquery_tool.py`)
+**Purpose**: Secure data warehouse access
+**Google Cloud Service**: **BigQuery**
+- Customer profile queries (50+ customers with 34+ data points)
+- Transaction analysis (15+ categories, real-time processing)
+- Portfolio data retrieval
+- Regulatory reporting and compliance
+
+#### RAG Tools (`rag_tools.py`)
+**Google Cloud Services**: **Vertex AI + Cloud Storage**
+- Document embedding and semantic search
+- Knowledge synthesis from research documents
+- Multi-modal content processing
+
+#### Visualization Tools (`visualization_tools.py`)
+**Integration**: **Looker + Custom Charts**
+- Interactive plotting with Plotly/D3.js
+- Export capabilities (PDF, PNG, SVG)
+- Real-time data visualization updates
+
+### 6. Google Cloud Services Layer#### Data & Analytics
+- **BigQuery**: Enterprise data warehouse (customer profiles, transactions, market data)
+- **Cloud Storage**: Unstructured data storage (research docs, reports, images)  
+- **Looker**: Business intelligence and embedded analytics
+
+#### AI & ML Services
+- **Vertex AI**: Unified ML platform for model hosting and training
+- **Agentspace**: Enterprise AI agent management and orchestration
+
+#### Infrastructure
+- **Pub/Sub**: Real-time messaging for market feeds and notifications
+- **Cloud Run**: Serverless container platform for agent services
+- **Memorystore**: Redis caching layer for performance optimization
+
+### 7. Data Sources Layer#### Internal Data
+- Customer profiles (demographics, preferences, risk tolerance)
+- Account balances and investment holdings
+- Transaction history and spending patterns
+
+#### External Data  
+- **LSEG/Refinitiv**: Market data via BigQuery integration
+- Economic indicators and news feeds
+- Research reports and regulatory filings
+
+#### Compliance Data
+- KYC documents and AML records
+- Audit trails and risk assessments
+
+## Security Architecture**Authentication**: Google Cloud IAM with RBAC
+**Data Protection**: AES-256 encryption at rest, TLS 1.3 in transit  
+**Network Security**: VPC, Cloud Armor, Private Google Access
+**Compliance**: SOC 2, PCI DSS, GDPR compliance
+
+## Scalability Features- **Auto-scaling**: Cloud Run (0 to 1000+ instances)
+- **Load Balancing**: Global traffic distribution
+- **Caching**: Cloud CDN and Memorystore optimization
+- **Monitoring**: Cloud Operations Suite for observability
+
+## Data Flow Example1. User query → FastAPI (`main.py`)
+2. Authentication → Google Cloud Identity  
+3. Agent routing → Orchestrator (`agent.py`)
+4. Specialized processing → Subagents (portfolio, market, etc.)
+5. Data access → Tools (BigQuery, RAG, visualization)
+6. Cloud services → GCP infrastructure
+7. Response synthesis → Aggregated user response
+
+
 **Contact:**  
 For issues, suggestions, or agent customization: Open a Github issue or email the project owner.
 
 **License:**  
 MIT (or as specified in project LICENSE file).
+
+
