@@ -1,0 +1,12 @@
+google-adk
+google-cloud-bigquery
+google-genai
+matplotlib
+pandas
+plotly
+google-cloud-storage
+PyPDF2
+openpyxl
+python-docx
+docx
+# Used for base64 encoding images if generating inline charts
