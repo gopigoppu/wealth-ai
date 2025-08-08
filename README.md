@@ -116,6 +116,14 @@ _"What is the risk exposure in my client’s tech sector holdings and how should
 
 # WealthGPT Agent-Based System ArchitectureBased on the provided architectural overview and data analysis, I've created a comprehensive, well-defined architecture for the WealthGPT system that incorporates Google Cloud products, specialized agents, and tools. Here's the detailed architecture:## Architecture OverviewThe WealthGPT system is designed as a **cloud-native, multi-agent wealth management platform** built on Google Cloud Platform. The architecture follows a layered approach with seven distinct tiers, each optimized for specific functionality while maintaining enterprise-grade security and scalability.
 
+# WealthGPT Agent-Based System Architecture
+
+![alt text](./images/wealth_gpt_architecture.png)
+
+Complete WealthGPT Agent-Based Architecture with Google Cloud Platform Integration
+
+![alt text](./images/wealth-gpt.png)
+
 ## Core Architecture Components### 1. Client Interface Layer
 - **Web Applications**: React/Angular-based interfaces
 - **Mobile Applications**: React Native/Flutter apps  
