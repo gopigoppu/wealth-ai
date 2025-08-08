@@ -52,8 +52,6 @@ Watch a demo of WealthGPT in action:
 https://www.youtube.com/watch?v=-GGfpvDJtUg
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-GGfpvDJtUg" title="WealthGPT Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ---
 
 ## System Workflow
