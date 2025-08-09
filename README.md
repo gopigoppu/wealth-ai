@@ -46,11 +46,11 @@
 
 ## Demo Video
 
-[![WealthGPT Demo](https://img.youtube.com/vi/-GGfpvDJtUg/0.jpg)](https://www.youtube.com/watch?v=-GGfpvDJtUg)
 
-Watch a demo of WealthGPT in action:  
-https://www.youtube.com/watch?v=-GGfpvDJtUg
+[![WealthGPT Additional Demo](https://img.youtube.com/vi/ZFrbEKfqOxM/0.jpg)](https://www.youtube.com/watch?v=ZFrbEKfqOxM)
 
+Watch another demo of WealthGPT:  
+https://www.youtube.com/watch?v=ZFrbEKfqOxM
 
 ---
 
